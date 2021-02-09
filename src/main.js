@@ -4,11 +4,11 @@ import { createI18n } from 'vue-i18n';
 import App from './App.vue';
 
 import en from '/locales/en.json';
-import cn from '/locales/cn.json';
+import zh from '/locales/zh.json';
 
 let curLocale = sessionStorage.getItem('locale');
 if (!curLocale) {
-  curLocale = 'cn';
+  curLocale = 'zh';
 }
 
 const i18n = createI18n({
@@ -16,7 +16,7 @@ const i18n = createI18n({
   locale: curLocale,
   messages: {
     en,
-    cn,
+    zh,
   }
 });
 

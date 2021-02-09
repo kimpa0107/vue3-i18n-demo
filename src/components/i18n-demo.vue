@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <select name="locale" v-model="locale">
-      <option value="cn">cn</option>
+      <option value="zh">zh</option>
       <option value="en">en</option>
     </select>
 
